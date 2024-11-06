@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lecture 5</title>
+        <style>
+            body {
+                margin: 0px;
+            }
+
+            #header {
+                background-color: #a4edb0;
+                text-align: center;
+                padding: 20px;
+            }
+
+            #header img {
+                width: 150px;
+                height: 150px;
+            }
+
+            /* The navbar container */
+            .topnav {
+                display: flex;
+                justify-content:center;
+                align-items: center;
+                background-color: #333;
+            }
+
+            /* Navbar links */
+            .topnav a {
+                color: #f2f2f2;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+
+            /* Links - change color on hover */
+            .topnav a:hover {
+                background-color: #ddd;
+                color: black;
+            }
+
+            /* Row */
+            .row {
+                display: flex;
+                text-align: justify;
+            }
+
+            /* Column */
+            .column {
+                justify-content: center;
+                align-items: center;
+                width: 33.33%;
+                margin: 10px;
+            }
+
+            #column1 {
+                margin-inline: 0px;
+            }
+
+            #columnz {
+                width: 60%;
+                margin-inline: 10px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div id = "coffee">
+            <div id = "header">
+                <img src = "pic/goblin.jpeg" alt="goblin">
+                <h1>Goblin</h1>
+            </div>
+            <div class="topnav">
+                <a href="#">Link</a>
+                <a href="#">Link</a>
+                <a href="#">Link</a>
+            </div>
+            <div class="row">
+                <div class="column" >
+                    <h2>Column</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. </p>
+                </div>
+                <div class="column" id=”column1”>
+                    <h2>Column</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. </p>
+                </div>
+                <div class="column">
+                    <h2>Column</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. </p>
+                </div>
+            </div>
+              
+            <div class="row">
+                <div class="column" >
+                    <h2>The Bench” by Kate Simkins</h2>
+                    <p>The elderly lady shuffled the few remaining steps to the park bench and sat down, happy to catch her breath and rest for a moment. The autumn sunshine was warm, but the nip in the air made her glad of her warm coat. She placed her handbag neatly on her knee.</p>
+                </div>
+                <div class="column" id="columnz">
+                    <h2>“Drone” by Mortimer Ridgewood</h2>
+                    <p>She first heard it while she was making coffee.The morning was already off to a rough start. Rachel had woken up, lazy and languid in the wake of her twice-snoozed alarm, and reached for her husband's side of the bed. Much to her disgruntlement, the spot where he should have been was empty and cold. She glared at the empty space for a moment, then promptly snoozed her alarm again out of spite. One of the downsides of working from home was she missed out on good morning kisses as Mark got ready for his morning commute. </p>
+                </div>
+                <div class="column">
+                   <h2>The Bench” by Kate Simkins</h2>
+                   <p>The elderly lady shuffled the few remaining steps to the park bench and sat down, happy to catch her breath and rest for a moment. The autumn sunshine was warm, but the nip in the air made her glad of her warm coat. She placed her handbag neatly on her knee.</p>
+                </div>
+            </div>     
+        </div>
+    </body>
+</html>
