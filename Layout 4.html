@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Layout 1</title>
+        <title>Layout 4</title>
     </head>
     <style>
         h1 {
@@ -9,7 +9,7 @@
         }
 
         body {
-            background-color:bisque ;
+            background-color:#fdc4ff ;
         }
 
         div {
@@ -24,48 +24,55 @@
             margin: 0px;
         }
         
+        .header {
+            justify-content: center;
+            margin: 10px;
+        }
+
         .row {
             display: flex;
             justify-content: space-between;
+            align-items: center;
         }
         #logo {
-            width: 30%;
+            width: 25%;
         }
-        #menu {
-            width: 70%;
+        #logo h2 {
+            padding: 38px;
         }
-
+        .top {
+            width: 75%;
+            margin: 0px;
+        }
+        #phone {
+            justify-content: flex-end;
+            display: flex;
+        }
+        
         .rows {
-            justify-content: center;
+            display: flex;
+            align-content: left;
+            align-items: center;
         }
         .rows h2 {
             padding: 120px;
         }
-
-        .rowss {
-            display: flex;
-            justify-content: space-between;
-        }
-        #feat {
-            width: 33.33%;
-        }
-        #feat h2 {
-            padding: 50px;
-        }
-
-        .rowsss {
-            display: flex;
-            justify-content: space-between;
-        }
-        .rowsss h2 {
-            padding-block : 170px;
-        }
-        #sidebar {
-            width: 25%;
+        .next {
+            width: 60%;
+            margin-left: 0px;
         }
         #content {
-            width: 75%;
-            
+            justify-content: flex-start;
+        }
+        #sidebar {
+            justify-content: flex-end;
+            width: 40%;
+        }
+        #sidebar h2 {
+            height: fit-content;
+            text-align: center;
+            padding-top: 257px;
+            padding-bottom: 258px;
         }
 
         .full h2{
@@ -73,39 +80,37 @@
         }
     </style>
     <body>
-        <h1>LAYOUT A</h1>
+        <h1>LAYOUT D</h1>
         <div>
+            <div class = 'header'>
+                <h2>BLOG MENU</h2>
+            </div>
+
             <div class = 'row'>
                 <div id = 'logo'>
                     <h2>LOGO</h2>
                 </div>
-                <div id = 'menu'>
-                    <h2>MENU</h2>
+                <div class = 'top'>
+                    <div id = 'phone'>
+                        <h2>PHONE NO</h2>
+                    </div>
+                    <div id = 'menu'>
+                        <h2>MENU</h2>
+                    </div>
                 </div>
             </div>
 
             <div class = 'rows'>
-                <h2>IMAGE SLIDESHOW</h2>
-            </div>
-
-            <div class = 'rowss'>
-                <div id = 'feat'>
-                    <h2>FEAT 1</h2>
+                <div class = 'next'>
+                    <div id = 'slideshow'>
+                        <h2>SLIDESHOW</h2>
+                    </div>
+                    <div id = 'content'>
+                        <h2>TEXT CONTENT</h2>
+                    </div>
                 </div>
-                <div id = 'feat'>
-                    <h2>FEAT 2</h2>
-                </div>
-                <div id = 'feat'>
-                    <h2>FEAT 3</h2>
-                </div>
-            </div>
-
-            <div class = 'rowsss'>
                 <div id = 'sidebar'>
                     <h2>SIDEBAR</h2>
-                </div>
-                <div id = 'content'>
-                    <h2>TEXT CONTENT</h2>
                 </div>
             </div>
 
