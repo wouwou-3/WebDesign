@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Layout 1</title>
+    </head>
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        body {
+            background-color:bisque ;
+        }
+
+        div {
+            margin: 5px;
+        }
+
+        h2 {
+            border: 2px solid black;
+            background-color: white;
+            text-align: center;
+            padding: 10px;
+            margin: 0px;
+        }
+        
+        .row {
+            display: flex;
+            justify-content: space-between;
+        }
+        #logo {
+            width: 30%;
+        }
+        #menu {
+            width: 70%;
+        }
+
+        .rows {
+            justify-content: center;
+        }
+        .rows h2 {
+            padding: 120px;
+        }
+
+        .rowss {
+            display: flex;
+            justify-content: space-between;
+        }
+        #feat {
+            width: 33.33%;
+        }
+        #feat h2 {
+            padding: 50px;
+        }
+
+        .rowsss {
+            display: flex;
+            justify-content: space-between;
+        }
+        .rowsss h2 {
+            padding-block : 170px;
+        }
+        #sidebar {
+            width: 25%;
+        }
+        #content {
+            width: 75%;
+            
+        }
+
+        .full h2{
+           padding: 20px; 
+        }
+    </style>
+    <body>
+        <h1>LAYOUT A</h1>
+        <div>
+            <div class = 'row'>
+                <div id = 'logo'>
+                    <h2>LOGO</h2>
+                </div>
+                <div id = 'menu'>
+                    <h2>MENU</h2>
+                </div>
+            </div>
+
+            <div class = 'rows'>
+                <h2>IMAGE SLIDESHOW</h2>
+            </div>
+
+            <div class = 'rowss'>
+                <div id = 'feat'>
+                    <h2>FEAT 1</h2>
+                </div>
+                <div id = 'feat'>
+                    <h2>FEAT 2</h2>
+                </div>
+                <div id = 'feat'>
+                    <h2>FEAT 3</h2>
+                </div>
+            </div>
+
+            <div class = 'rowsss'>
+                <div id = 'sidebar'>
+                    <h2>SIDEBAR</h2>
+                </div>
+                <div id = 'content'>
+                    <h2>TEXT CONTENT</h2>
+                </div>
+            </div>
+
+            <div class = 'full'>
+                <h2>FOOTER</h2>
+            </div>
+        </div>
+    </body>
+</html>
