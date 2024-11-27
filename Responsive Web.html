@@ -64,7 +64,7 @@
                 padding-bottom: 2px;
             }
 
-            .row {
+            .row, .date {
                 justify-content: center;
                 align-items: center;
             }
@@ -134,7 +134,7 @@
             }
 
             #footer p {
-                margin-top: 8px;
+                margin-block: 10px;
                 text-align: center;
             }
 
@@ -159,6 +159,7 @@
                 .col-s-12 {width: 100%;}
                 .row {display: flex; flex-direction: row;}
                 .jump {display: flex; flex-direction: row;}
+                .date {display: flex; flex-direction: row;}
             }
             @media only screen and (min-width: 768px) {
                 /* For desktop: */
@@ -174,6 +175,9 @@
                 .col-10 {width: 83.33%;}
                 .col-11 {width: 91.66%;}
                 .col-12 {width: 100%;}
+                #rows {display: flex; flex-direction: row-reverse;}
+                #footer {display: flex;}
+                .date {display: flex; flex-direction: column;}
             }
 
         </style>
@@ -211,7 +215,7 @@
             
             <div id = "Section2">
                 <h2>Signature Coffee</h2>
-                <div class = "row">
+                <div class = "row"  id = "rows">
                     <div class = "column col-s-3 col-3" id = "col">
                         <img src="pic/signature coffee.png" alt="Signature Coffee">
                     </div>
@@ -236,7 +240,7 @@
         
 
         <div id = "footer">
-            <div class="column col-s-12" >
+            <div class="column col-s-12 col-4" >
                 <h2>Contact Us</h2>
                 <div class = "jump col-s-12">
                     <a href="#">+6012-8457913</a>
@@ -244,38 +248,38 @@
                 <div class = "jump col-s-12">
                     <a href="#">huscorcoffee@outlook.com</a>
                 </div>
-                <div class = "row col-s-12">
+                <div class = "date col-s-12">
                     <p>Mon-Fri 9am-8pm</p>
                     <p>Sat-Sun 8am-12am</p>
                 </div>
             </div>
-            <div class="column">
+            <div class="column col-4">
                 <h2>Customers</h2>
                 <div id = "row">
-                    <div class = "jump col-s-6" id = "f2">
+                    <div class = "jump col-s-6 col-12" id = "f2">
                         <a href="#">FAQ</a>
                     </div>
-                    <div class = "jump col-s-6" id = "f2">
+                    <div class = "jump col-s-6 col-12" id = "f2">
                         <a href="#">Customer Feedback</a>
                     </div>
                 </div>
             </div>
-            <div class="column">
+            <div class="column col-4">
                 <h2>Company</h2>
                 <div id = "row">
-                    <div class = "jump col-s-4" id = "f3">
+                    <div class = "jump col-s-4 col-12" id = "f3">
                         <a href="#">About Us</a>
                     </div>
-                    <div class = "jump col-s-4" id = "f3">
+                    <div class = "jump col-s-4 col-12" id = "f3">
                         <a href="#">Career</a>
                     </div>
-                    <div class = "jump col-s-4" id = "f3">
+                    <div class = "jump col-s-4 col-12" id = "f3">
                         <a href="#">Privacy Policy</a>
                     </div>
-                    <div class = "jump col-s-6" id = "f3">
+                    <div class = "jump col-s-6 col-12" id = "f3">
                         <a href="#">Terms</a>
                     </div>
-                    <div class = "jump col-s-6" id = "f3">
+                    <div class = "jump col-s-6 col-12" id = "f3">
                         <a href="#">Accessibility</a>
                     </div>
                 </div>
